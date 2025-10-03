@@ -17,8 +17,8 @@ function createPetals() {
         petal.id = `petal-${i+1}`;
         
         // Calcular posición inicial
-        const topPos = `${petalData.y_relative + POSITION_BASE.y}px`;
-        const leftPos = `${petalData.x_relative + POSITION_BASE.x}px`;
+        const topPos = `calc(50vh + ${petalData.y_relative + POSITION_BASE.y}px)`;
+        const leftPos = `calc(50vw + ${petalData.x_relative + POSITION_BASE.x}px)`;
         
         petal.setAttribute("style", `
             top: ${topPos}; 
@@ -39,7 +39,7 @@ function createPetals() {
         `;
         
         petal.appendChild(img);
-        document.querySelector('.cristal').appendChild(petal);
+        document.body.appendChild(petal);
         
         // Obtener la posición en píxeles para la física
         const rect = petal.getBoundingClientRect();

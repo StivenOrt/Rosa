@@ -8,6 +8,15 @@ body {
     perspective: 1000px;
 }
 
+#rosa-container {
+    position: absolute;
+    width: 100%; /* O el ancho de tu rosa */
+    height: 100%;
+    top: 0;
+    left: 0;
+    /* Asegúrate de que este contenedor esté DENTRO del .cristal o posicionado correctamente */
+}
+
 /* Estilos para los pétalos */
 .petal {
     position: absolute;
@@ -27,7 +36,6 @@ img {
 /* Estilos para el cristal */
 .cristal {
     position: absolute;
-    position: relative;
     left: calc(50vw - 150px);
     width: 300px;
     height: 650px;
