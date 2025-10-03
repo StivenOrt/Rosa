@@ -183,7 +183,7 @@ img {
 
     .base {
         width: 220px; 
-        bottom: -10px; 
+        bottom: 5px; 
     }
 
     .light-source {
@@ -199,7 +199,7 @@ img {
     }
 
     #talloc {
-        top: calc(50% - 15px); 
+        top: calc(50% + 50px); 
         left: calc(50% - 5px); 
     }
 }
